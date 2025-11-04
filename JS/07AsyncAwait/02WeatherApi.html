@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+
+    <!-- Bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Weather Api</h1>
+    <img src="" alt="" id="img">
+
+    <script>
+      
+        let img = document.getElementById("img")
+        let API_key = "Write Your APi Key";
+        let city_name = "surat";
+        
+        async function getData() {
+            try {
+        //   let response = await fetch(
+        //     `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${API_key}`
+        //   );
+          let response = await fetch(
+            `https://api.github.com/users/jayramin`
+          );
+        //   let response = await fetch(
+        //     `https://api.openweathermap.org/data/2.5/weather?q=jaipur&appid=674b85e223a2582f3dde97fa2a5a7f97`
+        //   );
+          let data = await response.json();
+          console.log(data);
+
+          img.src = data.avatar_url
+
+        } catch (error) {
+          console.log(error);
+        }
+      }
+      getData();
+
+
+    </script>
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

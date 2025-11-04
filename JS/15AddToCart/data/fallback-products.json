@@ -1,0 +1,7 @@
+[
+  {"id":1,"title":"Classic T-Shirt","price":499,"description":"Comfort cotton tee","category":"clothing","image":"https://images.unsplash.com/photo-1520975912911-0f36f0f1c3a6","rating":{"rate":4.3,"count":120}},
+  {"id":2,"title":"Denim Jacket","price":2199,"description":"Stylish denim jacket","category":"clothing","image":"https://images.unsplash.com/photo-1523381216013-3b1b8a3b6f00","rating":{"rate":4.7,"count":80}},
+  {"id":3,"title":"Sneakers","price":3499,"description":"Daily sneakers","category":"footwear","image":"https://images.unsplash.com/photo-1519741495793-8f5f6c2c2a7b","rating":{"rate":4.4,"count":200}},
+  {"id":4,"title":"Leather Belt","price":799,"description":"Genuine leather belt","category":"accessories","image":"https://images.unsplash.com/photo-1519741495793-8f5f6c2c2a7b","rating":{"rate":4.0,"count":40}},
+  {"id":5,"title":"Sunglasses","price":999,"description":"UV protection sunglasses","category":"accessories","image":"https://images.unsplash.com/photo-1504198453319-5ce911bafcde","rating":{"rate":4.2,"count":150}}
+]

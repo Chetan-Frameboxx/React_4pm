@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      }
+      img{
+        width: 100%;
+      }
+      .col{
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div  id="box">
+      
+    </div>
+
+    <script>
+      let menu = [
+        {
+          imgUrl: "nike1.avif",
+          title: "Nike 1",
+        },
+        {
+          imgUrl: "nike2.jpeg",
+          title: "Nike 2",
+        },
+        {
+          imgUrl: "nike3.jpeg",
+          title: "Nike 3",
+        },
+        {
+          imgUrl: "nike4.jpeg",
+          title: "Nike 4",
+        },
+        {
+          imgUrl: "nike5.jpeg",
+          title: "Nike 5",
+        },
+        {
+          imgUrl: "nike6.jpeg",
+          title: "Nike 6",
+        },
+      ];
+      // let menu =
+      //        {
+      //            imgUrl : "nike.avif",
+      //            title: "Hello"
+      //        }
+
+      // let img = document.getElementById("img");
+      // let h2 = document.getElementById("h2");
+      let box = document.getElementById("box");
+
+      // h2.innerHTML = menu[0].title;
+      // img.src = menu[0].imgUrl;
+      // img.alt = menu[0].title;
+      menu.forEach((e) => {
+        console.log(e);
+
+        
+        box.innerHTML += `
+        <div class="col">
+
+          <img src="${e.imgUrl}" alt="${e.title}"  />
+          <h2>${e.title}</h2>
+          </div>
+         `;
+      });
+    </script>
+  </body>
+</html>

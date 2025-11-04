@@ -1,0 +1,10 @@
+/* Basic small custom styles */
+body.dark { background:#0b1220;color:#e6eef8 }
+.card.dark { background:#091021; color:#e6eef8; border-color:#142033 }
+.navbar.dark { background:#071026; }
+.cart-badge { position:relative }
+.toast { min-width:200px; }
+
+/* Cart drawer (not required but small utility if used) */
+.cart-drawer { position:fixed; right:16px; top:80px; width:360px; max-width:calc(100% - 48px); z-index:1050; transform:translateX(110%); transition:transform .2s ease; }
+.cart-drawer.open { transform:translateX(0); }

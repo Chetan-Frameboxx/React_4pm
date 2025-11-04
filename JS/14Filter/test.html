@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select name="course" id="course" onchange="handleChange()">
+      <option value="null">---</option>
+      <option value="Fashion">Fashion</option>
+      <option value="Electornics">Electornics</option>
+    </select>
+
+    <script>
+      let course = document.getElementById("course");
+
+      console.log(course);
+      console.log(course.value);
+
+     
+      let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      const products = [
+        { id: 1, name: "shoes", category: "Fashion", price: 800 },
+        { id: 1, name: "Charger", category: "Electornics", price: 80 },
+        { id: 1, name: "Jeans", category: "Fashion", price: 500 },
+        { id: 1, name: "Mobile", category: "Electornics", price: 1000 },
+      ];
+
+
+
+       function handleChange() {
+        console.log(course);
+        console.log(course.value);
+
+        products.filter((product) => {
+        //   product = product.category === "Fashion";
+          console.log(product);
+        //   console.log(filteredCategory);
+        });
+      }
+
+    </script>
+  </body>
+</html>

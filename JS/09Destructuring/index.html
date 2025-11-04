@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring in JS</title>
+  </head>
+  <body>
+    <h1>Destructuring in JS</h1>
+
+    <script>
+      // Array Destructuring
+
+      //   const colors = ["red", "green", "blue"];
+      //   const [first, second, third] = colors;
+
+      //   console.log(first); // red
+      //   console.log(second); // green
+      //   console.log(third); // blue
+
+      //   const numbers = [10, 20, 30, 40];
+      //   const [a, , c] = numbers;
+      //   console.log(a, c); // 10, 30
+
+      //   const [x, y = 5] = [10, 20];
+      //   console.log(x, y); // 10, 5
+
+      // Swapping of Two Number
+
+      let a = 1,
+        b = 2;
+      [a, b] = [b, a];
+      console.log(a, b); // 2, 1
+
+      //   Object Destructuring
+
+        const person = { name: "Amit", age: 25, city: "Delhi" };
+        const { name} = person;
+      //   const person2 = { name: "Amit", age: 25, city: "Delhi" };   // nhi Krege
+
+        console.log(name); // Amit
+      //   console.log(age); // 25
+      //   console.log(city); // Delhi
+
+      //   Example From React Series
+
+      //   function Greeting(props) {
+
+      //     const {name, age} = props
+      //     return (
+      //       <h1>
+      //         Hello, {props.name}! You are {props.age} years old.
+      //         Hello, {name}! You are {age} years old.
+      //       </h1>
+      //     );
+      //   }
+
+      //   Greeting()
+    </script>
+  </body>
+</html>

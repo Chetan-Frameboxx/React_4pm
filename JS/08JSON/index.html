@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+  </head>
+  <body>
+    <h1>JSON</h1>
+    <p>
+      JSON (JavaScript Object Notation) is a widely-used, human-readable,
+      text-based format for exchanging data between systems and programming
+      languages.
+    </p>
+
+    <h2 id="h2"></h2>
+
+    <script>
+      let username = {
+        name: "Rohan",
+        age: 25,
+        email: 'rohan@google.com'
+      }
+
+      let data = JSON.stringify(username)
+
+      localStorage.setItem("username", data)
+
+
+      let h2 = document.getElementById("h2")
+
+     let udata =  JSON.parse(localStorage.getItem("username"))
+      h2.innerHTML = udata.name
+
+     console.log( udata);
+     
+    </script>
+  </body>
+</html>

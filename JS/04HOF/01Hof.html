@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOF - Higher Order Function</title>
+  </head>
+  <body>
+    <h1>HOF - Higher Order Function</h1>
+    <p>
+      A function Which Takes Another Function As an Arguments is known as Higher
+      Order Function
+    </p>
+    <p>
+      This makes JavaScript very powerful, since functions are treated as
+      first-class citizens.
+    </p>
+
+    <script>
+      function multiplier(factor) {
+        return function (x) {
+          return x * factor;
+        };
+      }
+
+      let double = multiplier(2);
+      let triple = multiplier(3);
+
+      console.log(double(5)); // 10
+      console.log(triple(5)); // 15
+
+      function calculate(a, b, callback) {
+        return callback(a, b);
+      }
+
+      function add(a, b) {
+        return a + b;
+      }
+      function mulitply(a, b) {
+        return a * b;
+      }
+
+      function Hof(callback) {
+        return callback;
+      }
+
+      function ekcALLback() {}
+      function ekcALLback() {}
+      function ekcALLback() {}
+      function ekcALLback() {}
+      function ekcALLback() {}
+
+      Hof(ekcALLback);
+      Hof(ekcALLback);
+      Hof(ekcALLback);
+      Hof(ekcALLback);
+      Hof(ekcALLback);
+      Hof(ekcALLback);
+      Hof(ekcALLback);
+      Hof(ekcALLback);
+      Hof(ekcALLback);
+
+      // map
+      // filter
+      // reduce
+
+      let numbers = [1, 2, 3, 4, 5];
+
+      let squares = numbers.map((n) => n * n); // [1, 4, 9, 16, 25]
+      //   let squares = numbers.map((n) => console.log(n));
+      let evens = numbers.filter((n) => n % 2 === 0); // [2, 4]
+
+      let sum = numbers.reduce((acc, n) => acc + n, 0); // 15
+      console.log(squares);
+      console.log(evens);
+      console.log(sum);
+    </script>
+  </body>
+</html>
