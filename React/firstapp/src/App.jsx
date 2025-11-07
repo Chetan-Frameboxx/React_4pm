@@ -1,24 +1,35 @@
 import React from 'react'
-import "./App.css"
 import Navbar from './Pages/Navbar'
-import Footer from './Pages/Footer'
-import Button from './Pages/Button'
-import Home from './Pages/Home'
+import Greet from './component/Greet'
 
 function App() {
-  return (
-    <>
-    <div className="container">
 
-    <Navbar/>
-      <h1>Namaste Bharat</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laudantium quia obcaecati accusantium saepe facere! Ratione, ipsa voluptates! Optio enim non doloremque officiis, veniam quibusdam iure officia vel quia temporibus.</p>
-      <Button/>
-      <Home/>
-      <Footer/>
-      
+  // Custom Function 
+
+  const greetUser =  () => {
+    console.log("Hello Ji!");
+  }
+  // const greetUserNew =  () => {
+  //   console.log("Hello Ji!");
+  // }
+
+  return (
+    <div>
+      <Navbar/>
+      <div className="container pt-3 mt-2 border border-2 border-danger-subtle">
+        <div className="col">
+          <Greet name="Aastha" onGreet={greetUser}/>
+          {/* <Greet name="Sejal" onGreetNew={greetUserNew}/> */}
+          <Greet name="Sejal" onGreet={greetUser}/>
+          <Greet name="Hardi"/>
+          <Greet name="Dharmik"/>
+          <Greet name="Roshan"/>
+          <Greet name="Arun"/>
+          <Greet name="Rohan"/>
+          <Greet name="Marshal"/>
+        </div>
+      </div>
     </div>
-      </>
   )
 }
 
