@@ -3,6 +3,7 @@ import Navbar from './Pages/Navbar'
 import Greet from './component/Greet'
 import Counter from './component/StateComp/Counter';
 import UserForm from './component/StateComp/UserForm';
+import SimpleBtn from './component/EventComp/SimpleBtn';
 
 function App() {
 
@@ -36,9 +37,14 @@ function App() {
 
           {/*2. State In React  */}
 
-            <Counter/>
-            <hr />
-            <UserForm/>
+            {/* <Counter/> */}
+            {/* <hr /> */}
+            {/* <UserForm/> */}
+
+
+            {/* 3. Event Handling In React */}
+
+            <SimpleBtn/>
 
         </div>
       </div>
