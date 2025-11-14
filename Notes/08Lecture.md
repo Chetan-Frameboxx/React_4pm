@@ -105,53 +105,6 @@ export default UsersList;
 
 ---
 
-### **Example 3: Dynamic List – Add Items**
-
-```jsx
-import { useState } from 'react';
-
-function TodoList() {
-  const [task, setTask] = useState('');
-  const [tasks, setTasks] = useState([]);
-
-  const addTask = () => {
-    if (task.trim() === '') return;
-
-    const newTask = {
-      id: Date.now(),
-      text: task
-    };
-
-    setTasks([...tasks, newTask]);
-    setTask('');
-  };
-
-  return (
-    <div className="p-5 text-center">
-      <h2>Todo List</h2>
-
-      <input
-        type="text"
-        placeholder="Enter task"
-        value={task}
-        onChange={(e) => setTask(e.target.value)}
-      />
-
-      <button onClick={addTask}>Add Task</button>
-
-      <ul>
-        {tasks.map(item => (
-          <li key={item.id}>{item.text}</li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-export default TodoList;
-```
-
----
 
 ##  **Practice Tasks**
 

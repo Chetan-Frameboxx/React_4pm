@@ -7,6 +7,7 @@ import SimpleBtn from './component/EventComp/SimpleBtn';
 import Welcome from './component/ConditionalComp/Welcome';
 import TernaryExample from './component/ConditionalComp/TernaryExample';
 import MessageAlert from './component/ConditionalComp/MessageAlert';
+import FruitsList from './component/ListComp/ListCompRender';
 
 function App() {
 
@@ -53,14 +54,25 @@ function App() {
 
             {/* 4. Conditional Statement  */}
 
-            <div className='text-bg-danger w-75 m-auto'> 
+            {/* <div className='text-bg-danger w-75 m-auto'> 
 
 
             <Welcome/>
             <TernaryExample/>
             <MessageAlert/>
 
-            </div>
+            </div> */}
+
+
+              {/* 5. List Rendering In React  */}
+              <div className="col text-bg-success p-3">
+                <h2 className='text-decoration-underline mb-3'>Rendering List </h2>
+
+
+              <FruitsList/>
+              </div>
+
+
         </div>
       </div>
     </div>
