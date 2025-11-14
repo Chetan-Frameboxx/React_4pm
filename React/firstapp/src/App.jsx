@@ -4,6 +4,9 @@ import Greet from './component/Greet'
 import Counter from './component/StateComp/Counter';
 import UserForm from './component/StateComp/UserForm';
 import SimpleBtn from './component/EventComp/SimpleBtn';
+import Welcome from './component/ConditionalComp/Welcome';
+import TernaryExample from './component/ConditionalComp/TernaryExample';
+import MessageAlert from './component/ConditionalComp/MessageAlert';
 
 function App() {
 
@@ -19,7 +22,7 @@ function App() {
   return (
     <div>
       <Navbar/>
-      <div className="container bg-warning py-3 mt-2 border border-2 border-danger-subtle">
+      <div className="container bg-warning py-3 mt-2 border border-2 border-danger-subtle ">
         <div className="col">
 
           {/*1. Props in React  */}
@@ -44,8 +47,20 @@ function App() {
 
             {/* 3. Event Handling In React */}
 
-            <SimpleBtn/>
+            {/* <SimpleBtn/> */}
 
+
+
+            {/* 4. Conditional Statement  */}
+
+            <div className='text-bg-danger w-75 m-auto'> 
+
+
+            <Welcome/>
+            <TernaryExample/>
+            <MessageAlert/>
+
+            </div>
         </div>
       </div>
     </div>
