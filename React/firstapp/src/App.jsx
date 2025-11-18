@@ -8,6 +8,8 @@ import Welcome from './component/ConditionalComp/Welcome';
 import TernaryExample from './component/ConditionalComp/TernaryExample';
 import MessageAlert from './component/ConditionalComp/MessageAlert';
 import FruitsList from './component/ListComp/ListCompRender';
+import One from './component/StyleComp/one';
+import MusicPlayerSlider from './component/StyleComp/MusicPlayerSlider';
 
 function App() {
 
@@ -65,13 +67,20 @@ function App() {
 
 
               {/* 5. List Rendering In React  */}
-              <div className="col text-bg-success p-3">
+              {/* <div className="col text-bg-success p-3">
                 <h2 className='text-decoration-underline mb-3'>Rendering List </h2>
 
 
               <FruitsList/>
-              </div>
+              </div> */}
 
+
+
+
+              {/* 6. Style Component  */}
+
+                <One/>
+                <MusicPlayerSlider/>
 
         </div>
       </div>
