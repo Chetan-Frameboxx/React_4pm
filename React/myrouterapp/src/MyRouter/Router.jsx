@@ -3,6 +3,7 @@ import Home from "../components/Home";
 import About from "../components/About";
 import Team from "../components/Team";
 import Navbar from "../components/Navbar";
+import Profile from "../components/Profile";
 
 
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/team",
     element: <><Navbar/><Team/></>,
+  },
+  {
+    path: "/profile/:username",
+    element: <><Navbar/><Profile/></>,
   },
 ]);
 
