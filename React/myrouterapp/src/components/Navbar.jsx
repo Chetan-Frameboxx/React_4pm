@@ -9,6 +9,7 @@ function Navbar() {
               <li><NavLink className={(e) => {return e.isActive ? "blue" : ""}} to="/">Home </NavLink></li>
                 <li><NavLink className={(e) => {return e.isActive ? "blue" : ""}}to="/about">About</NavLink></li>
                 <li><NavLink className={(e) => {return e.isActive ? "blue" : ""}} to="/team">Team</NavLink></li>
+                <li><NavLink className={(e) => {return e.isActive ? "blue" : ""}} to="/learning">Learn React</NavLink></li>
             </ul>    
 
         </nav> 
