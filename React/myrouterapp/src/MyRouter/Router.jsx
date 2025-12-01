@@ -8,6 +8,7 @@ import LearningComp from "../components/LearningModules/LearningComp";
 import Foundation from "../components/LearningModules/FoundationComp/Foundation";
 import RouterCompo from "../components/LearningModules/RouterComp/Routercompo";
 import FoundationMenu from "../components/LearningModules/FoundationComp/FoundationMenu";
+import NotFound from "../components/NotFound";
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/team",
     element: <><Navbar/><Team/></>,
+  },
+  {
+    path: "*",
+    element: <><NotFound/></>,
   },
   {
     path: "/learning",
