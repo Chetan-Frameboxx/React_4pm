@@ -9,12 +9,17 @@ import Foundation from "../components/LearningModules/FoundationComp/Foundation"
 import RouterCompo from "../components/LearningModules/RouterComp/Routercompo";
 import FoundationMenu from "../components/LearningModules/FoundationComp/FoundationMenu";
 import NotFound from "../components/NotFound";
+import App from "../App";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<><Navbar/><Home/></> ,
+  },
+  {
+    path: "/app",
+    element:<><Navbar/><App/></> ,
   },
   {
     path: "/about",
