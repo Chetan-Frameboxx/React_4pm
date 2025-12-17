@@ -11,7 +11,7 @@ function GreatGrandParent() {
       <CourseContext.Provider value={course}>
         <div className="text-bg-dark p-3">
 
-        <select onChange={(e) => setCourse(e.target.value)}  class="form-select w-25 my-2">
+        <select onChange={(e) => setCourse(e.target.value)}  className="form-select w-25 my-2">
           <option value="">Select Course</option>
           <option value="Database">Database</option>
           <option value="Backend">Backend</option>
