@@ -9,30 +9,37 @@ import CountMemoCompSlow from "./components/LearningModules/HooksComp/useMemoCom
 import CountMemoCompFast from "./components/LearningModules/HooksComp/useMemoComp/CountMemoCompFast";
 import ParentCallComp from "./components/LearningModules/HooksComp/useCallbackComp/ParentCallComp";
 import ParentCallbackComp from "./components/LearningModules/HooksComp/useCallbackComp/ParentCallBackComp";
+import CounterLayout from "./components/LearningModules/HooksComp/useLayoutEffectComp/CounterLayout";
 
 function App() {
-  const [count, dispatch] = useReducer(reducer, 0);
+  // const [count, dispatch] = useReducer(reducer, 0);
   
   return (
     <>
       <div className="container my-2 p-3">
         <h1 className="text-center">App</h1>
-      <button className='btn btn-success' onClick={() => dispatch({ type: 'INCREMENT' })}>+</button>
-      <button className='btn btn-success' onClick={() => dispatch({ type: 'IncrementByFive' })}>5+</button>
-      <h2>Count : {count}</h2>
+      {/* <button className='btn btn-success' onClick={() => dispatch({ type: 'INCREMENT' })}>+</button>
+      <button className='btn btn-success' onClick={() => dispatch({ type: 'IncrementByFive' })}>5+</button> */}
+      {/* <h2>Count : {count}</h2> */}
 
       </div>
+
       <div className="container my-2 p-3 border border-3 text-bg-light">
-        <h2 className="text-center">useCallback</h2>
+        <h2 className="text-center">useLayoutEffect</h2>
+        <CounterLayout />
+      </div>
+
+      {/* <div className="container my-2 p-3 border border-3 text-bg-light"> */}
+        {/* <h2 className="text-center">useCallback</h2> */}
         {/* <ParentCallComp /> */}
-        <ParentCallbackComp />
+        {/* <ParentCallbackComp /> */}
+      {/* </div> */}
 
-      </div>
-      <div className="container my-2 p-3 border border-3 text-bg-light">
+      {/* <div className="container my-2 p-3 border border-3 text-bg-light">
         <h2 className="text-center">useMemo</h2>
-        <CountMemoCompSlow />
+        <CountMemoCompSlow /> */}
         {/* <CountMemoCompFast /> */}
-      </div>
+      {/* </div> */}
       {/* <div className="container my-2 p-3 border border-3 text-bg-light">
         <h2 className="text-center">useReducer</h2>
         <CounterComp />
@@ -50,10 +57,10 @@ function App() {
         <FetchData/>
       </div> */}
 
-      <div className="container my-2 p-3 border border-3 text-bg-dark">
+      {/* <div className="container my-2 p-3 border border-3 text-bg-dark">
         <h2 className="text-center">useState</h2>
         <Counter />
-      </div>
+      </div> */}
     </>
   );
 }
