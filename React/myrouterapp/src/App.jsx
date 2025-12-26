@@ -10,6 +10,9 @@ import CountMemoCompFast from "./components/LearningModules/HooksComp/useMemoCom
 import ParentCallComp from "./components/LearningModules/HooksComp/useCallbackComp/ParentCallComp";
 import ParentCallbackComp from "./components/LearningModules/HooksComp/useCallbackComp/ParentCallBackComp";
 import CounterLayout from "./components/LearningModules/HooksComp/useLayoutEffectComp/CounterLayout";
+import LoginFormComp from "./components/LearningModules/HooksComp/useIdTransitionComp/LoginFormComp";
+import SearchList from "./components/LearningModules/HooksComp/useIdTransitionComp/SearchList";
+import FetchDataEnv from "./components/LearningModules/HooksComp/useEffectComp/FetchDataEnv";
 
 function App() {
   // const [count, dispatch] = useReducer(reducer, 0);
@@ -25,9 +28,18 @@ function App() {
       </div>
 
       <div className="container my-2 p-3 border border-3 text-bg-light">
+        <h2 className="text-center">Env Variable</h2>
+        <FetchDataEnv/>
+      </div>
+      <div className="container my-2 p-3 border border-3 text-bg-light">
+        <h2 className="text-center">useID and useTranistion</h2>
+        <LoginFormComp />
+        <SearchList/>
+      </div>
+      {/* <div className="container my-2 p-3 border border-3 text-bg-light">
         <h2 className="text-center">useLayoutEffect</h2>
         <CounterLayout />
-      </div>
+      </div> */}
 
       {/* <div className="container my-2 p-3 border border-3 text-bg-light"> */}
         {/* <h2 className="text-center">useCallback</h2> */}
